@@ -4,6 +4,9 @@
 # In[13]:
 
 
+
+#Import required libraries
+
 import xml.etree.cElementTree as ET
 from collections import defaultdict
 import pprint
@@ -13,6 +16,8 @@ import codecs
 import schema
 import sqlite3 
 import pandas as pd
+
+#Check the "k" value for each tag and see if there are any potential problems.
 
 lower = re.compile(r'^([a-z]|_)*$')
 lower_colon = re.compile(r'^([a-z]|_)*:([a-z]|_)*$')
